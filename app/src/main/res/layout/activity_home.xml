@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bbbbbbb"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.CountActivity">
+
+    <RelativeLayout
+        android:visibility="visible"
+        android:id="@+id/topmenuLL"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+
+        <ImageView
+            android:id="@+id/menuIV"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/menuicon"/>
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_alignParentEnd="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/shareicon"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_above="@id/optionLL"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:padding="10dp"
+                android:background="@drawable/frameview"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:visibility="visible"
+                    android:id="@+id/itemsListRV"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/optionLL"
+            android:layout_above="@id/addLL"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_marginRight="40dp"
+                    android:background="@drawable/frame"
+                    android:id="@+id/option1"
+                    android:textColor="#fff"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:text="55"/>
+
+                <Button
+                    android:layout_marginRight="40dp"
+                    android:background="@drawable/frame"
+                    android:id="@+id/option2"
+                    android:textColor="#fff"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:text="55"/>
+
+                <Button
+                    android:layout_marginRight="40dp"
+                    android:background="@drawable/frame"
+                    android:id="@+id/option3"
+                    android:textColor="#fff"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:text="55"/>
+
+                <Button
+                    android:id="@+id/option4"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/frame"
+                    android:text="55"
+                    android:textColor="#fff"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/addLL"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true">
+
+
+            <com.google.android.gms.ads.AdView
+
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:layout_gravity="bottom"
+                android:id="@+id/adView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                ads:adSize="BANNER"
+                ads:adUnitId="@string/banner_ads_unit_id">
+
+            </com.google.android.gms.ads.AdView>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

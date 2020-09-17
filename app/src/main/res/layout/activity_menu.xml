@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    tools:context=".Activity.MenuActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <ImageView
+            android:id="@+id/homeIV"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:src="@drawable/homeicon"/>
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/selectlevel"/>
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/shareIV"
+            android:layout_alignParentEnd="true"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:src="@drawable/shareicon"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:padding="20dp"
+        android:layout_above="@id/adViewLL"
+        android:id="@+id/menuOptionsLL"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/countBT"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:background="@drawable/frameview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/football"/>
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/football"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/football"/>
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/football"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/compareBT"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:background="@drawable/frameview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/orange"/>
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/orange"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="50dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/greater_sign"/>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/tamatoo"/>
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/tamatoo"/>
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/tamatoo"/>
+
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/arrangeBT"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="70dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:background="@drawable/frameview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_gravity="bottom"
+                        android:padding="15dp"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/football"/>
+
+                    <ImageView
+                        android:padding="10dp"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/football"/>
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/football"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/cherry"/>
+
+                    <ImageView
+                        android:padding="10dp"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/cherry"/>
+
+                    <ImageView
+                        android:layout_gravity="bottom"
+                        android:padding="15dp"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/cherry"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:visibility="visible"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:id="@+id/addBT"
+                android:gravity="center_horizontal"
+                android:background="@drawable/frameview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/icecream"/>
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/icecream"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="50dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/add"/>
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/football"/>
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/football"/>
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/bringl"/>
+
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/subBT"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:background="@drawable/frameview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/pineapple"/>
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/pineapple"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="50dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sub"/>
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/football"/>
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/football"/>
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/brookle"/>
+
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/adViewLL"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+
+        <com.google.android.gms.ads.AdView
+
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ads_unit_id">
+
+        </com.google.android.gms.ads.AdView>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

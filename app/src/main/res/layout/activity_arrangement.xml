@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    tools:context=".Activity.ArrangementActivity">
+
+
+    <RelativeLayout
+        android:visibility="visible"
+        android:id="@+id/topmenuLL"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal"
+            android:background="@drawable/selectlevelbg"
+            android:gravity="center"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_above="@id/ansLL"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:id="@+id/order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""/>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/menuIV"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/menuicon"/>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ansLL"
+        android:layout_above="@id/optionLL"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <LinearLayout
+            android:background="@drawable/frameview"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/target1">
+
+            <TextView
+                android:textSize="80dp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:text=""
+                android:id="@+id/option1TV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:background="@drawable/frameview"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/target2">
+            <TextView
+                android:textSize="80dp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:text=""
+                android:id="@+id/option2TV"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:background="@drawable/frameview"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/target3">
+            <TextView
+                android:textSize="80dp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:text=""
+                android:id="@+id/option3TV"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:background="@drawable/frameview"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/target4">
+            <TextView
+                android:textSize="80dp"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:text=""
+                android:id="@+id/option4TV"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/optionLL"
+        android:visibility="visible"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/frame">
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/option1"
+                    android:textColor="#fff"
+                    android:textSize="70dp"
+                    android:textStyle="bold"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:text=""/>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/frame">
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/option2"
+                    android:textColor="#fff"
+                    android:textSize="70dp"
+                    android:textStyle="bold"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:text=""/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/frame">
+                <TextView
+                    android:gravity="center"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/option3"
+                    android:textColor="#fff"
+                    android:textSize="70dp"
+                    android:textStyle="bold"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:text=""/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/frame">
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/option4"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:text=""
+                    android:textColor="#fff"
+                    android:textSize="70dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                ads:adSize="BANNER"
+                ads:adUnitId="@string/banner_ads_unit_id">
+
+            </com.google.android.gms.ads.AdView>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">KidsFunWithMaths</string>
+    <string name="greater_than"></string>
+    <string name="greater_sign"><![CDATA[<]]></string>
+    <string name="equal_sign">=</string>
+    <string name="smaller_sign"><![CDATA[>]]></string>
+    <string name="banner_ads_unit_id">ca-app-pub-2823662566409957/5382865296</string>
+    <string name="app_id">ca-app-pub-2823662566409957~6695946962</string>
+    <string name="inter_ads_unit_Id">ca-app-pub-2823662566409957/4999721915</string>
+    <string name="add">+</string>
+    <string name="sub">-</string>
+</resources>
